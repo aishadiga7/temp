@@ -1,0 +1,54 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="handler"
+            type="com.example.task.views.room.AddStudentFragment" />
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="80dp"
+        android:paddingStart="@dimen/dimen_15"
+        android:paddingEnd="@dimen/dimen_15">
+
+     <androidx.appcompat.widget.AppCompatEditText
+         android:id="@+id/name"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:hint="@string/enter_name"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/roll_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_roll_no"
+            android:layout_marginTop="20dp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/standard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_class_grade"
+            android:layout_marginTop="20dp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/from"
+            android:layout_marginTop="20dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add"
+            android:layout_gravity="center"
+            android:onClick="@{handler::onClick}"
+            android:layout_marginTop="50dp"/>
+
+
+    </LinearLayout>
+</layout>
